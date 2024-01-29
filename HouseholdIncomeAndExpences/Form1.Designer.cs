@@ -51,6 +51,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeProgramBtn = new System.Windows.Forms.Button();
+            this.minimizeProgramBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -366,6 +367,23 @@
             this.closeProgramBtn.UseVisualStyleBackColor = false;
             this.closeProgramBtn.Click += new System.EventHandler(this.closeProgramBtn_Click);
             // 
+            // minimizeProgramBtn
+            // 
+            this.minimizeProgramBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(186)))), ((int)(((byte)(105)))));
+            this.minimizeProgramBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.minimizeProgramBtn.FlatAppearance.BorderSize = 0;
+            this.minimizeProgramBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeProgramBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.minimizeProgramBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(72)))), ((int)(((byte)(88)))));
+            this.minimizeProgramBtn.Location = new System.Drawing.Point(618, 12);
+            this.minimizeProgramBtn.Name = "minimizeProgramBtn";
+            this.minimizeProgramBtn.Size = new System.Drawing.Size(29, 30);
+            this.minimizeProgramBtn.TabIndex = 28;
+            this.minimizeProgramBtn.Text = "_";
+            this.minimizeProgramBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.minimizeProgramBtn.UseVisualStyleBackColor = false;
+            this.minimizeProgramBtn.Click += new System.EventHandler(this.minimizeProgramBtn_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.button1;
@@ -373,6 +391,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(103)))), ((int)(((byte)(114)))));
             this.ClientSize = new System.Drawing.Size(700, 659);
+            this.Controls.Add(this.minimizeProgramBtn);
             this.Controls.Add(this.closeProgramBtn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -421,5 +440,6 @@
         private Panel panel1;
         private Panel panel2;
         private Button closeProgramBtn;
+        private Button minimizeProgramBtn;
     }
 }

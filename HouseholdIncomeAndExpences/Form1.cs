@@ -143,6 +143,9 @@ namespace HouseholdIncomeAndExpences
             Close();
         }
 
-        
+        private void minimizeProgramBtn_Click(object sender, EventArgs e)
+        {
+            WindowState=FormWindowState.Minimized;
+        }
     }
 }
